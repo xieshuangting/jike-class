@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>极客学院</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="iconfont.css">
+	<script src='js/require.js' data-main="main"></script>
+</head>
+<body>
+	<header>
+		<!-- 页头 -->
+		<div class="container">
+			<h1 class="logo">
+				<a href="#">
+					<img src="img/logo.png" width="115px" height="42px" alt="极客学院">
+				</a>
+			</h1>
+			<nav>
+				<ul class="main-nav">
+					<li><a href="#">首页</a></li>
+					<li>
+						<a href="#">职业<i class="iconfont">&#xe600;</i></a>
+						<ul>
+							<li class="divsion">前端</li>
+							<li><a href="#">web前端工程师</a></li>
+							<li><a href="#">微信小程序</a></li>
+							<li class="divsion">移动端</li>
+							<li><a href="#">Android工程师</a></li>
+							<li><a href="#">iOS小程序</a></li>
+							<li class="divsion">后端</li>
+							<li><a href="#">php工程师</a></li>
+							<li><a href="#">python工程师小程序</a></li>
+							<li><a href="#">Golang工程师</a></li>
+							<li class="divsion">大数据</li>
+							<li><a href="#">大数据平台研发工程师</a></li>
+							<li class="divsion">人工智能</li>
+							<li><a href="#">机器学习工程师</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">课程<i class="iconfont">&#xe600;</i></a>
+						<ul>
+							<li><a href="#">课程库</a></li>
+							<li><a href="#">职业路径</a></li>
+							<li><a href="#">知识体系图</a></li>
+							<li><a href="#">系列课程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">企业<i class="iconfont">&#xe600;</i></a>
+						<ul>
+							<li><a href="#">微软人工智能</a></li>
+							<li><a href="#">百度AI图像技术课</a></li>
+							<li><a href="#">AWS云计算</a></li>
+							<li><a href="#">腾讯云课堂专区</a></li>
+							<li><a href="#">Qualcomm公开课</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">社区<i class="iconfont">&#xe600;</i></a>
+						<ul>
+							<li><a href="#">Wiki</a></li>
+							<li><a href="#">技术问答</a></li>
+							<li><a href="#">社群</a></li>
+							<li><a href="#">资料下载</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">线下课程<i class="iconfont">&#xe600;</i></a>
+						<ul>
+							<li><a href="#">web前端</a></li>
+							<li><a href="#">python+人工智能</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<ul class="user">
+				<li class="search" id="show-search">
+					<div>
+						<input type="text" name="search" placeholder="搜索课程、问答或Wiki">
+						<a href="#"><i class="iconfont">&#xe630;</i></a>
+					</div>
+				</li>
+				<li class="study"><i class="iconfont">&#xe696;</i></li>
+				<li class="info"><i class="iconfont">&#xe627;</i></li>
+				<li class="user-info">
+					<img src="img/user.jpg" width="32px" height="32px">
+					<ul>
+						<li><a href="#">学习中心</a></li>
+						<li><a href="#">个人主页</a></li>
+						<li><a href="#">账号设置</a></li>
+						<li><a href="#">退出登录</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<form id="searchwrap" class="searchbar">
+				<button><i class="iconfont">&#xe630;</i></button>
+				<input type="text" placeholder="输入搜索的课程">
+				<span class="iconfont" id="hide-search">&#xe625;</span>
+			</form>
+		</div>
+	</header>
+
+	<section>
+		<aside>
+		<!-- 侧边栏 -->
+			<h2>
+				<i class="iconfont">&#xe73e;</i>
+				<span>课程库</span>
+			</h2>
+			<ul>
+				<li>
+					<a href="#">前端开发</a>
+					<dl>
+						<dt>前端基础</dt>
+						<dd>HTML</dd>
+						<dd>CSS</dd>
+						<dd>Javascript</dd>
+						<dd>HTML5</dd>
+						<dd>CSS3</dd>
+						<dd class="dnone">技术前瞻</dd>
+						<dt>前端进阶</dt>
+						<dd>Typescript</dd>
+						<dd>前端安全</dd>
+						<dd class="dnone">项目实战</dd>
+						<dt>前端框架</dt>
+						<dd>jQuery</dd>
+						<dd>jQuery UI</dd>
+						<dd>jQuery Moblie</dd>
+						<dd>Ext JS</dd>
+						<dd>AngularJS</dd>
+						<dd>reactJS</dd>
+						<dd  class="dnone">Bootstrap</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">移动开发</a>
+					<dl>
+						<dt>应用开发</dt>
+						<dd>Android</dd>
+						<dd class="dnone">iOS</dd>
+						<dt>游戏开发</dt>
+						<dd>Cocos</dd>
+						<dd>Unity3D</dd>
+						<dd class="dnone">SpriteKit2D</dd>
+						<dt>常用框架</dt>
+						<dd>Cordova</dd>
+						<dd class="dnone">React Native</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">后端开发</a>
+					<dl>
+						<dt>Python</dt>
+						<dd>Python 基础</dd>
+						<dd>web2py</dd>
+						<dd>Django</dd>
+						<dd>Flask</dd>
+						<dd class="dnone">GUI</dd>
+						<dt>php</dt>
+						<dd>PHP基础</dd>
+						<dd>YII</dd>
+						<dd>ThinkPHP</dd>
+						<dd>Laravel</dd>
+						<dd class="dnone">Wordpress</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#">人工智能</a>
+				</li>
+				<li>
+					<a href="#">智能硬件/物联网</a>
+				</li>
+				<li>
+					<a href="#">设计/产品/测试</a>
+				</li>
+				<li>
+					<a href="#">云计算/大数据</a>
+				</li>
+				<li>
+					<a href="#">技术支撑</a>
+				</li>
+			</ul>
+		</aside>
+
+		<article>
+		<!-- 页面主体 -->
+			<div class="course-type">
+				<h3>全部课程</h3>	
+				<dl>最新
+					<dl>
+						<dd>最新</dd>
+						<dd>最热</dd>
+					</dl>				
+				</dl>
+				<dl>课程类型
+					<dl>
+						<dd>VIP</dd>
+						<dd>免费</dd>
+						<dd>认证专享</dd>
+						<dd>全部</dd>
+					</dl>				
+				</dl>
+				<dl>内容类型
+					<dl>
+						<dd>知识精讲</dd>
+						<dd>项目实战</dd>
+						<dd>全部</dd>
+					</dl>	
+				</dl>
+				<dl>难度等级
+					<dl>
+						<dd>初级</dd>
+						<dd>中级</dd>
+						<dd>高级</dd>
+						<dd>全部</dd>
+					</dl>
+				</dl>
+				<div class="list-switch">
+					<label for="list-switch">
+						<span class="iconfont">&#xe7a0;</span>
+						<input type="radio" name="list-switch" id="list-switch">
+					</label>
+					<label for="panel-switch">
+						<span class="iconfont">&#xe69f;</span>
+						<input type="radio" name="list-switch" id="panel-switch">
+					</label>
+				</div>
+			</div>
+			<div class="courses-wrap blist clearfix">
+			<!-- 总课程区域 -->
+				<div class="course-wrap">
+					<!-- 单课程区域 -->
+					<div class="course-info">
+						<div class="cimg">
+							<a href="#" class="cmask"></a>
+							<img src="https://a1.jikexueyuan.com/home/201711/21/8a5b/5a13b8e2a13cf.jpg" width="250px" height="135px">
+						</div>
+						<div class="cinfo">
+							<h3 class="chead"><a href="#">无服务器架构系列讲解 - Lambda + API Gateway</a></h3>
+							<p class="c-des">Lambda是AWS提供的一款无服务器计算服务。您不需要管理服务器、不需要安装操作系统、不需要维护运行时环境、不需要担心</p>
+							<div class="lf">
+								<div>
+									<span class="iconfont">&#xe811;</span>
+									<span>13课时88分钟</span>
+								</div>
+								<div class="lf-class">
+									<span class="iconfont">&#xe63f;</span>
+									<span>中级</span>
+								</div>
+							</div>
+							<div class="rg">
+								<div class="rg-people">
+									<span>398人学习</span>
+								</div>
+								<div class="AWS">
+									<span class="iconfont">&#xe602;</span>
+									<span>AWS</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="course-wrap clearfix">
+					<!-- 单课程区域 -->
+					<div class="course-info">
+						<div class="cimg">
+							<a href="#" class="cmask"></a>
+							<img src="https://a1.jikexueyuan.com/home/201711/21/8a5b/5a13b8e2a13cf.jpg"  width="250px" height="135px">
+						</div>
+						<div class="cinfo">
+							<h3 class="chead"><a href="#">无服务器架构系列讲解 - Lambda + API Gateway</a></h3>
+							<p class="c-des">Lambda是AWS提供的一款无服务器计算服务。您不需要管理服务器、不需要安装操作系统、不需要维护运行时环境、不需要担心</p>
+							<div class="lf">
+								<div>
+									<span class="iconfont">&#xe811;</span>
+									<span>13课时88分钟</span>
+								</div>
+								<div class="lf-class">
+									<span class="iconfont">&#xe63f;</span>
+									<span>中级</span>
+								</div>
+							</div>
+							<div class="rg">
+								<div class="rg-people">
+									<span>398人学习</span>
+								</div>
+								<div class="AWS">
+									<span class="iconfont">&#xe602;</span>
+									<span>AWS</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="course-wrap clearfix">
+					<!-- 单课程区域 -->
+					<div class="course-info">
+						<div class="cimg">
+							<a href="#" class="cmask"></a>
+							<img src="https://a1.jikexueyuan.com/home/201711/21/8a5b/5a13b8e2a13cf.jpg"  width="250px" height="135px">
+						</div>
+						<div class="cinfo">
+							<h3 class="chead"><a href="#">无服务器架构系列讲解 - Lambda + API Gateway</a></h3>
+							<p class="c-des">Lambda是AWS提供的一款无服务器计算服务。您不需要管理服务器、不需要安装操作系统、不需要维护运行时环境、不需要担心</p>
+							<div class="lf">
+								<div>
+									<span class="iconfont">&#xe811;</span>
+									<span>13课时88分钟</span>
+								</div>
+								<div class="lf-class">
+									<span class="iconfont">&#xe63f;</span>
+									<span>中级</span>
+								</div>
+							</div>
+							<div class="rg">
+								<div class="rg-people">
+									<span>398人学习</span>
+								</div>
+								<div class="AWS">
+									<span class="iconfont">&#xe602;</span>
+									<span>AWS</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="course-wrap clearfix">
+					<!-- 单课程区域 -->
+					<div class="course-info">
+						<div class="cimg">
+							<a href="#" class="cmask"></a>
+							<img src="https://a1.jikexueyuan.com/home/201711/21/8a5b/5a13b8e2a13cf.jpg"  width="250px" height="135px">
+						</div>
+						<div class="cinfo">
+							<h3 class="chead"><a href="#">无服务器架构系列讲解 - Lambda + API Gateway</a></h3>
+							<p class="c-des">Lambda是AWS提供的一款无服务器计算服务。您不需要管理服务器、不需要安装操作系统、不需要维护运行时环境、不需要担心</p>
+							<div class="lf">
+								<div>
+									<span class="iconfont">&#xe811;</span>
+									<span>13课时88分钟</span>
+								</div>
+								<div class="lf-class">
+									<span class="iconfont">&#xe63f;</span>
+									<span>中级</span>
+								</div>
+							</div>
+							<div class="rg">
+								<div class="rg-people">
+									<span>398人学习</span>
+								</div>
+								<div class="AWS">
+									<span class="iconfont">&#xe602;</span>
+									<span>AWS</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="course-wrap clearfix">
+					<!-- 单课程区域 -->
+					<div class="course-info">
+						<div class="cimg">
+							<a href="#" class="cmask"></a>
+							<img src="https://a1.jikexueyuan.com/home/201711/21/8a5b/5a13b8e2a13cf.jpg"  width="250px" height="135px">
+						</div>
+						<div class="cinfo">
+							<h3 class="chead"><a href="#">无服务器架构系列讲解 - Lambda + API Gateway</a></h3>
+							<p class="c-des">Lambda是AWS提供的一款无服务器计算服务。您不需要管理服务器、不需要安装操作系统、不需要维护运行时环境、不需要担心</p>
+							<div class="lf">
+								<div>
+									<span class="iconfont">&#xe811;</span>
+									<span>13课时88分钟</span>
+								</div>
+								<div class="lf-class">
+									<span class="iconfont">&#xe63f;</span>
+									<span>中级</span>
+								</div>
+							</div>
+							<div class="rg">
+								<div class="rg-people">
+									<span>398人学习</span>
+								</div>
+								<div class="AWS">
+									<span class="iconfont">&#xe602;</span>
+									<span>AWS</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="course-wrap clearfix">
+					<!-- 单课程区域 -->
+					<div class="course-info">
+						<div class="cimg">
+							<a href="#" class="cmask"></a>
+							<img src="https://a1.jikexueyuan.com/home/201711/21/8a5b/5a13b8e2a13cf.jpg"  width="250px" height="135px">
+						</div>
+						<div class="cinfo">
+							<h3 class="chead"><a href="#">无服务器架构系列讲解 - Lambda + API Gateway</a></h3>
+							<p class="c-des">Lambda是AWS提供的一款无服务器计算服务。您不需要管理服务器、不需要安装操作系统、不需要维护运行时环境、不需要担心</p>
+							<div class="lf">
+								<div>
+									<span class="iconfont">&#xe811;</span>
+									<span>13课时88分钟</span>
+								</div>
+								<div class="lf-class">
+									<span class="iconfont">&#xe63f;</span>
+									<span>中级</span>
+								</div>
+							</div>
+							<div class="rg">
+								<div class="rg-people">
+									<span>398人学习</span>
+								</div>
+								<div class="AWS">
+									<span class="iconfont">&#xe602;</span>
+									<span>AWS</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="course-wrap clearfix">
+					<!-- 单课程区域 -->
+					<div class="course-info">
+						<div class="cimg">
+							<a href="#" class="cmask"></a>
+							<img src="https://a1.jikexueyuan.com/home/201711/21/8a5b/5a13b8e2a13cf.jpg"  width="250px" height="135px">
+						</div>
+						<div class="cinfo">
+							<h3 class="chead"><a href="#">无服务器架构系列讲解 - Lambda + API Gateway</a></h3>
+							<p class="c-des">Lambda是AWS提供的一款无服务器计算服务。您不需要管理服务器、不需要安装操作系统、不需要维护运行时环境、不需要担心</p>
+							<div class="lf">
+								<div>
+									<span class="iconfont">&#xe811;</span>
+									<span>13课时88分钟</span>
+								</div>
+								<div class="lf-class">
+									<span class="iconfont">&#xe63f;</span>
+									<span>中级</span>
+								</div>
+							</div>
+							<div class="rg">
+								<div class="rg-people">
+									<span>398人学习</span>
+								</div>
+								<div class="AWS">
+									<span class="iconfont">&#xe602;</span>
+									<span>AWS</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- 分页效果 -->
+		<div id="split-page">
+			<!-- <div data-sp='tohome'><a href="#">首页</a></div>
+			<div data-sp='prepage'><a href="#">上一页</a></div>
+			<ul data-sp='page'>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li>……</li>
+			</ul>
+			<div data-sp='nextpage'><a href="#">下一页</a></div>
+			<div data-sp='toend'><a href="#">末页</a></div>
+			<div data-sp='total'>共<span>90</span>页</div>
+			<div data-sp='direct'>当前<input type="text">页<button>确定</button></div> -->
+		</div>
+	</section>
+
+	<footer>
+		
+	</footer>
+	<div id="totop" class="totop">
+		<span class="iconfont">&#xe601;</span>
+	</div>
+	
+</body>
+</html>
